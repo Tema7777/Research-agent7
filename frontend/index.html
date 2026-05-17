@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Research Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="panel">
+      <h1>AI Research Agent</h1>
+      <p class="subtitle">Generate a structured research report and export it as PDF.</p>
+
+      <label for="topic">Research topic</label>
+      <input id="topic" type="text" placeholder="e.g. Future of renewable energy storage" />
+
+      <button id="startBtn">Start Research</button>
+      <p id="status" class="status"></p>
+
+      <div id="downloadLinks" class="downloads hidden">
+        <a id="mdLink" target="_blank">Download Markdown</a>
+        <a id="pdfLink" target="_blank">Download PDF</a>
+      </div>
+    </section>
+
+    <section class="panel report-panel">
+      <h2>Generated Report</h2>
+      <article id="report" class="report"></article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
